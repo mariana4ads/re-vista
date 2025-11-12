@@ -1,0 +1,331 @@
+:root {
+  --color-primary: #2ba84a;
+  --color-secondary: #eda24e;
+  --color-emphasis: #c05c35;
+  --color-hover: #8a452a;
+  --color-text: #212121;
+  --color-bg: #f0ece5;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.hero-bg {
+  background-image: linear-gradient(
+    rgba(78, 62, 52, 0.774),
+    rgba(29, 26, 26, 0.884)
+    ),
+    url('./images/hero.jpg');
+  background-size: cover;
+  background-position: bottom;
+  padding: 30px 0 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title-main {
+  font-size: 5rem;
+  color: var(--color-secondary);
+  margin-bottom: 5px;
+  line-height: 1.1;
+  font-family: 'Fascinate', system-ui;
+}
+
+.title-main .emphasis {
+  color: var(--color-emphasis)
+}
+
+
+.slogan {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+
+.description {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-more {
+  color: var(--color-white);
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+  max-width: 800px;
+  padding-top: 60px;
+  margin: auto;
+}
+
+.arrow-down {
+  display: block;
+  margin: 10px auto;
+  animation: float 1.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.section-tip {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 4px;
+  margin-bottom: 1rem;
+}
+
+.tip-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tip-text {
+  font-size: 1.125em;
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.section-more {
+  padding: 50px 0;
+  background-color: var(--color-bg);
+}
+
+.p-text {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 auto 20px;
+  max-width: 800px;
+}
+
+.ods-tags-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.ods-tag {
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+}
+
+.ods-12 {
+  background-color: #b9882e;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.ods-13 {
+  background-color: #417e48;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  font-weight: 700;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--color-emphasis);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-hover);
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2px 6px;
+  font-size: 1em;
+}
+
+.btn-secondary:hover {
+  background-color: #388e3c;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-accent:hover {
+  background-color: #f57c00; /* Darker orange */
+  transform: scale(1.05);
+}
+
+
+
+.card {
+  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(31, 24, 11, 0.2);
+}
+
+.icon-accent {
+  font-size: 2em;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: var(--color-light);
+}
+
+/* Section 3: Contexto Local (Grid 2 Cols) */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.space-y {
+  /* Padding para os textos na coluna */
+  padding-right: 20px;
+}
+
+.space-y h3 {
+  margin-top: 1.5rem;
+}
+.space-y p {
+  margin-bottom: 1.5rem;
+}
+
+.solution-box {
+  background-color: var(--color-white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--color-accent);
+}
+
+/* Seção 6: Descarte Certo */
+.descarte-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid var(--color-primary);
+}
+
+
+/* Footer */
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 24px 0;
+  font-size: 0.9em;
+}
+
+.footer-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #90ee90;
+}
+
+@media (max-width: 992px) {
+  /* Tira o grid de 3 colunas e transforma em 1 ou 2 */
+  .grid-3-cols,
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .grid-3-cols article {
+    width: 100%;
+  }
+  .grid-2-cols {
+    gap: 30px;
+  }
+  .space-y {
+    padding-right: 0;
+  }
+  .title-main {
+    font-size: 4rem;
+  }
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 992px) {
+  /* Para telas de tablet, usa 2 colunas para brechós e 2 para reuso (se caber) */
+  #brechos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
