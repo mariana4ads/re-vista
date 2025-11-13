@@ -25,13 +25,13 @@ h3 {
 
 .hero-bg {
   background-image: linear-gradient(
-    rgba(78, 62, 52, 0.774),
-    rgba(29, 26, 26, 0.884)
+      rgba(78, 62, 52, 0.774),
+      rgba(29, 26, 26, 0.884)
     ),
     url('./images/hero.jpg');
   background-size: cover;
   background-position: bottom;
-  padding: 30px 0 20px;
+  padding: 20px 0 20px;
 }
 
 .container {
@@ -50,10 +50,14 @@ h3 {
   font-family: 'Fascinate', system-ui;
 }
 
-.title-main .emphasis {
-  color: var(--color-emphasis)
+.title-main .divider {
+  color: var(--color-white);
+  padding-left: 0.5rem;
 }
 
+.title-main .emphasis {
+  color: var(--color-emphasis);
+}
 
 .slogan {
   font-size: 1.5rem;
@@ -87,7 +91,8 @@ h3 {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -122,7 +127,7 @@ h3 {
   background-color: var(--color-bg);
 }
 
-.p-text {
+.ptext {
   text-align: center;
   font-size: 1.1em;
   margin: 0 auto 20px;
@@ -164,6 +169,73 @@ h3 {
   gap: 32px;
 }
 
+.card {
+  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(31, 24, 11, 0.2);
+}
+
+.card-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: var(--color-text);
+}
+
+.icon-accent {
+  font-size: 2em;
+  color: var(--color-emphasis);
+  margin-bottom: 12px;
+}
+
+.section-itapevi {
+  padding: 50px 0;
+}
+
+.bar {
+  border-bottom: 4px solid var(--color-primary);
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.space-text {
+  padding-right: 20px;
+}
+
+.space-text h3,
+.space-text p {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.solution-box {
+  background-color: var(--color-bg);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 6px rgba(10, 5, 5, 0.1);
+
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -196,7 +268,7 @@ h3 {
 }
 
 .btn-secondary:hover {
-  background-color: #388e3c;
+  background-color: #307c33;
 }
 
 .btn-accent {
@@ -209,67 +281,6 @@ h3 {
   transform: scale(1.05);
 }
 
-
-
-.card {
-  padding: 24px;
-  background-color: var(--color-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e0e0e0;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(31, 24, 11, 0.2);
-}
-
-.icon-accent {
-  font-size: 2em;
-  color: var(--color-accent);
-  margin-bottom: 12px;
-}
-
-.card-title {
-  font-size: 1.25em;
-  font-weight: 600;
-  color: var(--color-dark);
-  margin-bottom: 8px;
-}
-
-.card-text {
-  color: var(--color-light);
-}
-
-/* Section 3: Contexto Local (Grid 2 Cols) */
-.grid-2-cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px;
-  align-items: center;
-}
-
-.space-y {
-  /* Padding para os textos na coluna */
-  padding-right: 20px;
-}
-
-.space-y h3 {
-  margin-top: 1.5rem;
-}
-.space-y p {
-  margin-bottom: 1.5rem;
-}
-
-.solution-box {
-  background-color: var(--color-white);
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid var(--color-accent);
-}
-
 /* Seção 6: Descarte Certo */
 .descarte-box {
   max-width: 600px;
@@ -280,7 +291,6 @@ h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   border-top: 4px solid var(--color-primary);
 }
-
 
 /* Footer */
 .footer {
@@ -301,15 +311,11 @@ h3 {
 }
 
 @media (max-width: 992px) {
-  /* Tira o grid de 3 colunas e transforma em 1 ou 2 */
-  .grid-3-cols,
-  .grid-2-cols {
+  .grid-3,
+  .grid-2 {
     grid-template-columns: 1fr;
   }
-  .grid-3-cols article {
-    width: 100%;
-  }
-  .grid-2-cols {
+  .grid-2 {
     gap: 30px;
   }
   .space-y {
