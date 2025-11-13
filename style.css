@@ -5,6 +5,7 @@
   --color-hover: #8a452a;
   --color-text: #212121;
   --color-bg: #f0ece5;
+  --color-bg2: #e7ece6;
   --color-white: #ffffff;
 }
 
@@ -68,7 +69,7 @@ h3 {
 
 .description {
   color: var(--color-white);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
   max-width: 800px;
   margin-left: auto;
@@ -173,14 +174,14 @@ h3 {
   padding: 24px;
   background-color: var(--color-white);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border: 1px solid #e0e0e0;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(31, 24, 11, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-title {
@@ -233,7 +234,39 @@ h3 {
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 5px 6px rgba(10, 5, 5, 0.1);
+}
 
+.section-brecho {
+  padding: 50px 0;
+  background-color: var(--color-bg2);
+}
+
+.brecho-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brecho-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.brecho-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.brecho-text {
+  color: var(--color-text);
+  font-size: 0.9rem;
 }
 
 .btn {
@@ -271,43 +304,49 @@ h3 {
   background-color: #307c33;
 }
 
-.btn-accent {
-  background-color: var(--color-accent);
+.btn-brecho {
+  background-color: var(--color-primary);
   color: var(--color-white);
 }
 
-.btn-accent:hover {
-  background-color: #f57c00; /* Darker orange */
+.btn-brecho:hover {
+  background-color: #307c33;
   transform: scale(1.05);
 }
 
-/* Seção 6: Descarte Certo */
-.descarte-box {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: var(--color-white);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  border-top: 4px solid var(--color-primary);
+.section-descarte {
+  padding: 50px 0;
+  color: var(--color-text);
 }
 
-/* Footer */
 .footer {
-  background-color: var(--color-dark);
+  background-color: var(--color-hover);
   color: var(--color-white);
-  padding: 24px 0;
   font-size: 0.9em;
+  line-height: 0;
+}
+
+.container-footer {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container-footer p {
+  font-size: 0.9rem;
 }
 
 .footer-link {
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: all ease 0.3s;
 }
 
 .footer-link:hover {
-  color: #90ee90;
+  opacity: 60%;
+  text-decoration: underline;
 }
 
 @media (max-width: 992px) {
@@ -315,22 +354,21 @@ h3 {
   .grid-2 {
     grid-template-columns: 1fr;
   }
+
   .grid-2 {
     gap: 30px;
   }
-  .space-y {
-    padding-right: 0;
-  }
+
   .title-main {
     font-size: 4rem;
   }
-  .section {
-    padding: 60px 0;
+
+  .description {
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 640px) and (max-width: 992px) {
-  /* Para telas de tablet, usa 2 colunas para brechós e 2 para reuso (se caber) */
   #brechos-container {
     grid-template-columns: repeat(2, 1fr);
   }
