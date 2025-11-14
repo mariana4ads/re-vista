@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', function () {
     'Aprenda a fazer pequenos reparos (botões, costuras). Isso estende a vida útil da sua roupa por anos!',
     'Ao descartar, nunca jogue roupas no lixo comum. Doe para instituições de caridade ou venda em brechós.',
     'Pesquise a origem das suas roupas. Dê preferência a marcas que se comprometem com práticas éticas e sustentáveis.',
+    'Transforme roupas velhas e rasgadas em panos de limpeza, evitando o descarte desnecessário.',
+    'Invista em peças atemporais e de qualidade, em vez de seguir tendências rápidas (fast fashion).',
+    'Use sacolas reutilizáveis nas compras para reduzir o consumo de plástico.',
+    'Reaproveite potes de vidro e embalagens para armazenar alimentos, evitando comprar novos recipientes.',
+    'Tente a regra dos 30 dias: se você quer muito um item, espere 30 dias antes de comprá-lo para evitar o consumo impulsivo.',
+    'Aprenda técnicas simples de customização, como bordados ou tingimento, para dar cara nova a peças antigas.',
+    'Reformar calçados em vez de descartar. Um bom sapateiro pode trocar solas e saltos, prolongando a vida do seu sapato.',
+    'Evite o uso da secadora de roupas sempre que possível, pois ela gasta muita energia e desgasta o tecido.',
+    'Lave roupas apenas quando realmente necessário. Muitas vezes, um bom arejamento resolve o problema de odor.',
+    'Dê preferência a fibras naturais ou orgânicas (como algodão orgânico), que causam menor impacto ambiental.',
+    'Organize um bazar de troca de roupas ou livros entre amigos. É sustentável e divertido!',
+    'Apoie costureiras e artesãos locais para reparos e ajustes, fortalecendo a economia circular de Itapevi.',
+    'Ao comprar em brechós, explore! Muitas vezes, as melhores peças estão escondidas.',
+    'Verifique a etiqueta: procure por tecidos reciclados ou feitos de material reaproveitado.',
+    'Use menos sabão e amaciante. Isso reduz a poluição hídrica e prolonga a vida útil da sua máquina de lavar.',
+    'Se for comprar um eletrônico, procure modelos recondicionados ou use serviços de aluguel (compartilhamento).',
+    'Sempre que viajar, leve sua garrafa reutilizável e evite o uso de copos e garrafas plásticas descartáveis.',
   ];
 
   function showRandomTips() {
@@ -33,12 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       nome: 'Brechó da Esp',
-      endereco: 'R. dos Goianos, 27 a - Parque Suburbano',
+      endereco: 'R. dos Goianos, 27A - Parque Suburbano',
       link: 'https://maps.app.goo.gl/SrNKnmVervS4FHPq6',
     },
     {
       nome: 'Bazar Enjoei e Desapeguei',
-      endereco: 'R. Maestro Gilberto Pinho - cohab 2, Itapevi ',
+      endereco: 'R. Maestro Gilberto Pinho - cohab 2',
       link: 'https://maps.app.goo.gl/5W95HQtSi7x84KE58',
     },
     {
@@ -78,13 +95,13 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       nome: 'Garage Brechó',
-      endereco: 'R. Neusa Domingos Nascimento Vasconcelos, n 49 - Vila Aurora',
+      endereco: 'R. Neusa Domingos Nascimento Vasconcelos, 49 - Vila Aurora',
       link: 'https://maps.app.goo.gl/pjoLjWqPYmmbokxZ8',
     },
     {
       nome: 'Brechó Infantil Mão na Roda',
       endereco:
-        'Rua Joaquim Lemos,09 sala 2 Próximo a Praça 18 de Fevereiro - Centro',
+        'Rua Joaquim Lemos, 09 sala 2 Próximo a Praça 18 de Fevereiro - Centro',
       link: 'https://maps.app.goo.gl/Jx1hU9cNJ19uybxC8',
     },
     {
@@ -122,6 +139,11 @@ document.addEventListener('DOMContentLoaded', function () {
       endereco: 'R. Brasília Abreu Alves, 95 - Jardim Nova Itapevi',
       link: 'https://maps.app.goo.gl/9ZdNJSvAFHHEsdzaA',
     },
+    {
+      nome: 'Brechó Polsaque - By Priscina',
+      endereco: 'Av. Pedro Paulino, 81 - Conj. Hab. - St. D',
+      link: 'https://maps.app.goo.gl/rU4VGjPBiAutuHoZ6',
+    },
   ];
 
   function renderizarBrechos() {
@@ -137,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <div>
                     <a href="${brecho.link}" target="_blank" class="btn btn-brecho">
-                       Ver no Mapa
+                       Ver no mapa
                     </a>
                 </div>
               </div>
