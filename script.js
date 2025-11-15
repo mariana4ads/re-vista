@@ -168,10 +168,15 @@ document.addEventListener('DOMContentLoaded', function () {
     brechosContainer.innerHTML = html;
   }
   renderizarBrechos();
+
+  fetch('https://api.countapi.xyz/hit/mariana4ads-revista/visitas')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('contador').textContent = data.value;
+    })
+    .catch(err => {
+      console.error("Erro no contador:", err);
+      document.getElementById('contador').textContent = "—";
+    });
 });
 
-fetch('https://api.countapi.xyz/hit/mariana4ads-revista/visitas')
-  .then((response) => response.json())
-  .then((data) => {
-    document.getElementById('contador').textContent = data.value;
-  });
