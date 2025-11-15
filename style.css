@@ -344,6 +344,10 @@ h3 {
   transition: all ease 0.3s;
 }
 
+.footer .small-text {
+  font-size: small;
+}
+
 .footer-link:hover {
   opacity: 60%;
   text-decoration: underline;
