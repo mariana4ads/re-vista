@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link: 'https://maps.app.goo.gl/9ZdNJSvAFHHEsdzaA',
     },
     {
-      nome: 'Brechó Polsaque - By Priscina',
+      nome: 'Brechó Polsaque - By Priscila',
       endereco: 'Av. Pedro Paulino, 81 - Conj. Hab. - St. D',
       link: 'https://maps.app.goo.gl/rU4VGjPBiAutuHoZ6',
     },
